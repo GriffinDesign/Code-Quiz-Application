@@ -1,0 +1,53 @@
+
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 10px;
+
+}
+
+#highscores {
+    color: #7a039a;
+}
+
+#highscores:hover {
+    color: #ac30ce;
+    cursor: pointer;
+}
+
+.challenge-start {
+    text-align: center;
+    padding: 70px 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.challenge-start h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.challenge-start p {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+#start-btn {
+    background-color: #7a039a;
+    color: white;
+    transform: scale(180%);
+    border: none;
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+#start-btn:hover {
+    background-color: #ac30ce;
+    cursor: pointer;
+}

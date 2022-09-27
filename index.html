@@ -10,8 +10,7 @@
 <body>
     <div class="top-container">
         <h1 id="highscores">View Highscores</h1>
-        <h1 id="timer-text">Time:</h1>
-        <h1 id="timer"></h1>
+        <h1 id="timer">Time: 0</h1>
     </div>
 
     <div class="challenge-main">
@@ -21,25 +20,30 @@
         <button id="start-btn" onclick="startGame(),startTimer()">Start Quiz</button> 
     </div>
     <div class="question-1">
-        <h1 id="question-1-headline">Commonly used data types DO NOT include:</h1>
-        <button id="question-1-option-1">1. Strings</button>
-        <button id="question-1-option-1">2. Booleans</button>
-        <button id="question-1-option-1">3. Alerts</button>
-        <button id="question-1-option-1">4. Numbers</button>
+        <h1 id="question-1-headline">Commonly used data types<br/>DO NOT include:</h1>
+        <div class="question-one-options">
+        <button id="question-1-option-1" onclick="checkAnswerOne()">1. Strings</button>
+        <button id="question-1-option-2" onclick="checkAnswerOne()">2. Booleans</button>
+        <button id="question-1-option-3" onclick="checkAnswerOne()">3. Alerts</button>
+        <button id="question-1-option-4" onclick="checkAnswerOne()">4. Numbers</button>
+        </div>
+        <h2 id="correct-1"></h2><h2 id="wrong-1"></h2>
     </div>
     <div class="question-2">
-        <h1 id="question-2-headline">The condition in an if / else statement is enclosed in __________.</h1>
+        <h1 id="question-2-headline">The condition in an if / else statement is<br/>enclosed in __________.</h1>
         <button id="question-2-option-1">1. Quotes</button>
         <button id="question-2-option-2">2. Curly Brackets</button>
         <button id="question-2-option-3">3. Parenthesis</button>
         <button id="question-2-option-4">4. Square Brackets</button>
+        <h2 id="correct-2"></h2><h2 id="wrong-2"></h2>
     </div>
     <div class="question-3">
-        <h1 id="question-3-headline">Arrays in JavaScript can be used to store _______.</h1>
+        <h1 id="question-3-headline">Arrays in JavaScript can be used to store<br/> _______.</h1>
         <button id="question-3-option-1">1. Numbers & Strings</button>
         <button id="question-3-option-2">2. Other Arrays</button>
         <button id="question-3-option-3">3. Booleans</button>
         <button id="question-3-option-4">4. All of the Above</button>
+        <h2 id="correct-3"></h2><h2 id="wrong-3"></h2>
     </div>
     <div class="question-4">
         <h1 id="question-4-headline">String values must be enclosed within ______ when being assigned to variables.</h1>
@@ -47,6 +51,7 @@
         <button id="question-4-option-2">2. Curly Brackets</button>
         <button id="question-4-option-3">3. Quotes</button>
         <button id="question-4-option-4">4. Parenthesis</button>
+        <h2 id="correct-4"></h2><h2 id="wrong-4"></h2>
     </div>
     <div class="question-5">
         <h1 id="question-5-headline">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
@@ -54,8 +59,17 @@
         <button id="question-5-option-2">2. Terminal/Bash</button>
         <button id="question-5-option-3">3. For Loops</button>
         <button id="question-5-option-4">4. console.log</button>
+        <h2 id="correct-5"></h2><h2 id="wrong-5"></h2>
     </div>
-    
+    <div class="challenge-end">
+        <h1 id="end-headline">All Done!</h1>
+        <p id="final-score-text">Your final score is</p>
+        <p id="score"></p>
+        <p id="input-description">Enter initials:</p>
+        <input id="initial-input">
+        <button id="submit">Submit</button>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
